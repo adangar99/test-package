@@ -2,8 +2,9 @@
   "name": "adangar-test-package",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+   "build": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/adangar99/test-package/issues"
   },
-  "homepage": "https://github.com/adangar99/test-package#readme"
+  "homepage": "https://github.com/adangar99/test-package#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11"
+  }
 }
